@@ -2,10 +2,13 @@
   "name": "nodejs-complete-guide",
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
-  "main": "app.js",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production MONGO_USER=maximilian MONGO_PASSWORD=9u4biljMQc4jjqbe MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_T8OE02SHDZWLwk4TYtrWlsat node app.js",
+    "start": "node index.js",
     "start-server": "node app.js",
     "start:dev": "nodemon app.js"
   },
